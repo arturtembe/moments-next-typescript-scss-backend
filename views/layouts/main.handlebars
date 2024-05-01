@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog NodeJS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body> 
+
+    {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{else }}
+
+        {{/if }}
+
+    {{>_msg }}
+
+    {{{body}}} 
+    
+
+</body>
+<script src="js/app.js"></script>
+</html>
